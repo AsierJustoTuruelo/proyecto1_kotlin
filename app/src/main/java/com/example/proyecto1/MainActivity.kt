@@ -36,6 +36,7 @@ fun main(){
 fun variableNumericaFloat(numero:Int):Float{
     /* Funciones */
     return numero.toFloat()
+
 }
 
 // Un modo de reducir el tamaño de funciones para funciones pequeñas
