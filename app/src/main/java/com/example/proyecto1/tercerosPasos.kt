@@ -1,7 +1,8 @@
 package com.example.proyecto1
 
 fun main(){
-    obtenerMes(4)
+    obtenerMes(14)
+    result(true)
 }
 
 // USO DEL WHEN
@@ -19,9 +20,24 @@ fun obtenerMes(mes:Int):String{
         10->println("Octubre")
         11->println("Noviembre")
         12->println("Diciembre")
+        in 13..15-> println("hola")
         else-> println("Mes no existe")
 
     }
 
     return ""
+}
+
+fun result(valor:Any){
+    return when(valor){
+        is Int -> println("Es un entero")
+        is String -> println("Es una string")
+        is Boolean -> if (valor == true){
+            println("HOLA")
+        } else{
+            print("ADIOS")
+        }
+
+        else -> {}
+    }
 }
